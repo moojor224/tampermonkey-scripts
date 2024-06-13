@@ -20,17 +20,18 @@
 // @noframes
 // ==/UserScript==
 
-/*eslint-env jquery*/
-var total = 0;
-window.setInterval(()=>{
-    var group = document.querySelectorAll("iframe");
-    total += group.length;
-    if(group.length > 0){
-        console.groupCollapsed(`deleted ${group.length} iframe${group.length===1?"":"s"} (${total} total)`);
-        [...group].forEach(e=>{
-            console.log(e);
-            e.remove();
-        });
-        console.groupEnd();
-    }
-}, 1000);
+(function () {
+    let total = 0;
+    window.setInterval(() => {
+        let frames = document.querySelectorAll("iframe");
+        if (frames.length > 0) {
+            total += frames.length;
+            console.groupCollapsed(`deleted ${frames.length} iframe${frames.length === 1 ? "" : "s"} (${total} total)`);
+            Array.from(frames).forEach(e => {
+                console.log(e);
+                e.remove();
+            });
+            console.groupEnd();
+        }
+    }, 1000);
+})();
