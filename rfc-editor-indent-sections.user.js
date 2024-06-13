@@ -3,7 +3,7 @@
 // @version      1
 // @description  indents and highlights sections on the rfc website. done quick and dirty, so highlights may sometimes cover text
 // @author       moojor224
-// @match        https://www.rfc-editor.org/rfc/*
+// @match        https?://www.rfc-editor.org/rfc/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=rfc-editor.org
 // @grant        none
 // ==/UserScript==

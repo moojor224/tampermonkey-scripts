@@ -4,18 +4,18 @@
 // @description  removes all iframes from the page
 // @author       moojor224
 
-// @match        https://www.w3schools.com/*/*
-// @match        https://www.amazon.com/*
-// @match        www.geeksforgeeks.org/*
-// @match        https://www.bloomberg.com/*
-// @match        https://quickfever.com/*
-// @match        https://www.crx4chrome.com/*
-// @match        https://www.tutorialsteacher.com/*
-// @match        https://jsben.ch/*
-// @match        https://www.learnrazorpages.com/*
-// @match        https://www.daterangepicker.com/*
+// @match        https?://www.w3schools.com/*/*
+// @match        https?://www.amazon.com/*
+// @match        https?://www.geeksforgeeks.org/*
+// @match        https?://www.bloomberg.com/*
+// @match        https?://quickfever.com/*
+// @match        https?://www.crx4chrome.com/*
+// @match        https?://www.tutorialsteacher.com/*
+// @match        https?://jsben.ch/*
+// @match        https?://www.learnrazorpages.com/*
+// @match        https?://www.daterangepicker.com/*
 
-// @exclude      https://www.w3schools.com/*/tryit.*
+// @exclude      https?://www.w3schools.com/*/tryit.*
 
 // @noframes
 // ==/UserScript==
