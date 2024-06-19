@@ -15,7 +15,7 @@
 (async function () {
     let { createElement, CUSTOM_ELEMENTS, jst_CSSRule, jst_CSSStyleSheet } = await import("https://cdn.jsdelivr.net/gh/moojor224/random-files@latest/js/synced/jstools.js").then(e => e);
     CUSTOM_ELEMENTS.slider();
-    window.onload = function () {
+    window.addEventListener("load", function () {
         while (document.body.children.length > 0) {
             document.body.children[0].remove();
         }
@@ -24,7 +24,7 @@
             createElement("span", { classList: "tm-options-option_b-true", innerHTML: "option b span" })
         );
         createOptions(["option_a", "option_b"]);
-    };
+    });
     window.createOptions = function (options, callback = () => { }, elem) {
         let styles = new jst_CSSStyleSheet();
         window.setInterval(() => {

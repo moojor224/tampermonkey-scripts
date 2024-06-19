@@ -16,7 +16,7 @@
     // 	"description": "Log output to console"
     // }
     "jstools import": {
-        "prefix": "jstools_import",
+        "prefix": "tm_jstools_import",
         "body": [
             "// ==UserScript==",
             "// @name         ${1:${TM_FILENAME/(.*).user.js$/$1/}}",
